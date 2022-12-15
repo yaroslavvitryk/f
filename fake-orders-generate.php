@@ -64,11 +64,6 @@ try {
             }, 60000);
     }
 
-
-//    foreach($dbh->query('SELECT post_date from wp_posts where post_type = "shop_order"') as $row) {
-//        print_r($row);
-//    }
-//    $dbh->query('DELETE from wp_posts');
     $dbh = null;
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
